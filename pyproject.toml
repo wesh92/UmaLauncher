@@ -2,7 +2,7 @@
 name = "uma-launcher"
 version = "2.0.1"
 description = "Uma Launcher - Companion software to Uma Musume (DMM Version) that enhances the gameplay experience."
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 dependencies = [
     "altgraph==0.17.4",
     "async-generator==1.10",
