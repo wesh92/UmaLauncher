@@ -144,3 +144,61 @@ If you find a bug or have a suggestion for improvement:
 4. Add relevant labels to the issue.
 
 Thank you for contributing!
+
+## General File Tree Structure (subject to change)
+
+```
+UmaLauncher/
+├── .python-version                # Python version specification (3.11)
+├── build.bat                      # Build script using uv and pyinstaller
+├── pyproject.toml                 # Project dependencies and metadata
+├── FAQ.md                         # Frequently asked questions
+├── LICENSE.txt                    # GNU GPL v3 License
+├── readme.md                      # Project documentation
+├── Training_Analyzer_Documentation.md  # CSV output documentation
+│
+├── umalauncher/                   # Main package directory
+│   ├── __init__.py               # (implied)
+│   ├── carrotjuicer.py           # Game packet interception
+│   ├── constants.py              # Game-related constants
+│   ├── create_version.py         # Version file generator
+│   ├── dmm.py                    # DMM game launcher integration
+│   ├── gui.py                    # GUI components and widgets
+│   ├── helper_table.py           # Training helper table logic
+│   ├── helper_table_defaults.py  # Default table configurations
+│   ├── helper_table_elements.py  # Table UI elements
+│   ├── horsium.py                # Browser automation wrapper
+│   ├── mdb.py                    # Master database interactions
+│   ├── presence_screens.py       # Discord presence screen data
+│   ├── screenstate.py            # Game window state tracking
+│   ├── screenstate_utils.py      # Screen state helper functions
+│   ├── settings.py               # Settings management
+│   ├── settings_elements.py      # Settings UI elements
+│   ├── threader.py              # Main application thread manager
+│   ├── training_tracker.py       # Training data tracking
+│   ├── umaserver.py             # Local web server component
+│   ├── umatray.py               # System tray interface
+│   ├── util.py                  # Utility functions
+│   ├── version.py               # Version management
+│   ├── vpn.py                   # VPN client integration
+│   └── windowmover.py           # Window management
+│
+├── umalauncher/ui/              # UI definition files
+│   ├── about_tab.ui             # About dialog UI
+│   ├── new_preset_dialog.ui     # Preset creation dialog
+│   ├── preset_window.ui         # Preset management window
+│   ├── row_settings_dialog.ui   # Row settings dialog variants
+│   ├── row_settings_dialog_v2.ui
+│   ├── row_settings_dialog_v3.ui
+│   ├── scenario_presets.ui      # Scenario preset dialog
+│   └── test_preferences.ui      # Test preferences window
+│
+└── umalauncher/external/        # External dependencies
+    ├── data.proto              # Protobuf definitions
+    ├── data_pb2.py            # Generated protobuf code
+    ├── data_pb2.pyi           # Protobuf type hints
+    ├── race_data.proto        # Race data protobuf definitions
+    ├── race_data_parser.py    # Race data parsing utilities  
+    ├── race_data_pb2.py       # Generated race data protobuf code
+    └── race_data_pb2.pyi      # Race data protobuf type hints
+```
