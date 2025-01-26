@@ -1,3 +1,5 @@
+UMLAUNCHER_VERSION = "2.0.0"
+
 SCENARIO_DICT = {
     1: "URA Finals",
     2: "Aoharu Cup",

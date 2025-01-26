@@ -10,8 +10,7 @@ from loguru import logger
 import util
 import gui
 import glob
-
-VERSION = "1.15.0"
+from constants import UMLAUNCHER_VERSION as VERSION
 
 def parse_version(version_string: str):
     """Convert version string to tuple."""
